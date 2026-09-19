@@ -257,6 +257,79 @@ nav a:hover {
     animation: blinkTitle 1s infinite;
 }
 
+.content {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+.sidebar {
+    background-color: #ffff00;
+    border: 8px ridge #ff00ff;
+    padding: 20px;
+
+    box-shadow:
+        10px 10px 0 #00ffff,
+        -10px -10px 0 #ff0000;
+}
+
+#author {
+    text-align: center;
+}
+
+.author-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto 20px auto;
+
+    object-fit: cover;
+
+    border: 6px ridge #00ffff;
+
+    box-shadow:
+        5px 5px 0 #ff00ff,
+        -5px -5px 0 #ffff00;
+}
+
+#author h3 {
+    background-color: #000000;
+    color: #00ff00;
+
+    padding: 8px;
+
+    text-transform: uppercase;
+}
+
+#author h2 {
+    color: #ff0000;
+    font-size: 26px;
+
+    text-shadow: 2px 2px #ffffff;
+}
+
+#author p {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #000080;
+}
+
+@media (max-width: 800px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .author-image {
+        max-width: 250px;
+    }
+}
+
 
 @keyframes blinkTitle {
 
